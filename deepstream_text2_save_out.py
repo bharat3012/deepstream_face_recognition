@@ -27,13 +27,13 @@ PRIMARY_DETECTOR_UID = 1
 SECONDARY_DETECTOR_UID = 2
 
 #face embeddings
-DATASET_PATH = 'embeddings/train-5-celebrity-faces-embeddings.npz'
+DATASET_PATH = 'embeddings/my_embed.npz'
 
 faces_embeddings, labels = load_dataset(DATASET_PATH)
 
 # Defining the input output video file 
-stream_path  = '/opt/nvidia/deepstream/deepstream-5.0/samples/streams/s_vid.h264'
-output_path = "ds_out_2_v7.mp4"
+stream_path  = '/opt/nvidia/deepstream/deepstream-5.1/samples/streams/sample_720p.h264'
+output_path = "ds_out.mp4"
 
 fps_stream = GETFPS(0)
 print(fps_stream)
@@ -397,8 +397,3 @@ except:
 # cleanup
 pipeline.set_state(Gst.State.NULL)
 print("--- %s seconds ---" % (time.time() - start_time))
-
-
-
-
-
