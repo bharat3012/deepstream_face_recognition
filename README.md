@@ -23,7 +23,9 @@ This demo is built on top of Python sample app [deepstream-test2](https://github
 - Generate the onnx file for Facenet model
   - facenet_keras.h5 model is taken from [nyoki-mtl/keras-facenet](https://github.com/nyoki-mtl/keras-facenet) and ONNX from [tf2trt_with_onnx](https://github.com/riotu-lab/tf2trt_with_onnx)
 - Change the onnx-file path to the your facenet onnx file in `classifier_config.txt`.
-- `python3 deepstream_test_2_save_out.py <h264_elementary_stream_contains_faces>`
+- `python3 deepstream_test2_save_out.py <h264_elementary_stream_contains_faces>`
+                                         or run 
+   deepstream_face_recognition.ipynb
 
 ## References
 
