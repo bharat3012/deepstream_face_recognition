@@ -57,7 +57,8 @@ pgie_classes = ["Vehicle", "TwoWheeler", "Person", "Roadsign"] #class 2
 PRIMARY_DETECTOR_UID = 1
 SECONDARY_DETECTOR_UID = 2
 
-DATASET_PATH = 'embeddings/train-5-celebrity-faces-embeddings.npz'
+#face embeddings
+DATASET_PATH = 'embeddings/my_embed.npz'
 
 faces_embeddings, labels = load_dataset(DATASET_PATH)
 
