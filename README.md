@@ -27,7 +27,7 @@ This demo is built on top of Python sample app [deepstream-test2](https://github
   - facenet_keras.h5 can be found in the models folder. The model is taken from [nyoki-mtl/keras-facenet](https://github.com/nyoki-mtl/keras-facenet)
 
   - when converting pb file to onnx use below command instead:
-  `python -m tf2onnx.convert --input facenet.pb --inputs input_1:0[1,160,160,3] --inputs-as-nchw input_1:0 --outputs Bottleneck_BatchNorm/batchnorm_1/add_1:0 --output facenet.onnx`
+  `python -m tf2onnx.convert --input facenet.pb --inputs input_1:0[1,160,160,3] --inputs-as-nchw input_1:0 --outputs Bottleneck_BatchNorm/batchnorm_1/add_1:0 --output facenet_onnx.onnx`
   
 - Change the model-engine-file path to the your facenet engine file in `classifier_config.txt`.
 - `python3 deepstream_test_2.py <h264_elementary_stream_contains_faces>`
