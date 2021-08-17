@@ -1,1 +1,2 @@
-
+- Face Detection- FaceDetect TLT: [Here](https://ngc.nvidia.com/catalog/models/nvidia:tlt_facenet/files?version=deployable_v1.0) or Back-to-back detector: [Here](https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/master/back-to-back-detectors)
+- Face Recognition- Find Keras Model [Here](https://github.com/nyoki-mtl/keras-facenet) and FaceNet Onnx Model from [tf to Onnx](https://github.com/riotu-lab/tf2trt_with_onnx)
