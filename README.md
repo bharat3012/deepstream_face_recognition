@@ -1,6 +1,6 @@
 # Deepstream Facenet
 
-Face Recognition on Jetson Nano using DeepStream and Python.
+Face Recognition on dGPU and Jetson Nano using DeepStream and Python.
 
 ## DeepStream Installation
 `install-deepstream.sh` will install DeepStream and its dependencies
