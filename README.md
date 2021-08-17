@@ -11,15 +11,12 @@ Face Recognition on dGPU and Jetson Nano using DeepStream and Python.
 
 ## Overview of App
 This demo is built on top of Python sample app [deepstream-test2](https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test2) 
- - Download [back-to-back-detectors](https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/master/back-to-back-detectors). It is primary inference i.e PGIE.
-                                                                                    or
- - Use FaceDetect TLT [Deployable model from NGC](https://ngc.nvidia.com/catalog/models/nvidia:tlt_facenet/files?version=deployable_v1.0)
+ - Download [back-to-back-detectors](https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/master/back-to-back-detectors) or Download FaceDetect TLT [Deployable model from NGC](https://ngc.nvidia.com/catalog/models/nvidia:tlt_facenet/files?version=deployable_v1.0)
  - The secondary inference facenet engine i.e. SGIE
  - Remove or let the tracker be there.
  - Note: embedding dataset (npz file) should be generate by your dataset.
  - Note: you should count avg mean and avg std for your dataset:
     - Put avg mean in offsets parameter and in the net-scale-factor parameter put (1/avg std) in classifier_config.txt to make facenet model work efficient.
- 
 
 ### Steps to run the demo:
 
