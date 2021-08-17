@@ -60,6 +60,9 @@ proto-file=/opt/nvidia/deepstream/deepstream-5.1/sources/deepstream_python_apps/
 #model-engine-file=/opt/nvidia/deepstream/deepstream-5.1/sources/deepstream_python_apps/apps/face_recognition/models/Secondary_FaceDetect/fd_lpd.caffemodel_b1_gpu0_fp16.engine
 labelfile-path=/workspace/Courses/CV/inference/Bharat/ds_bgiddwani/Basics/DeepStream/English/python/face_recognition/models/Secondary_FaceDetect/labels.txt
 #int8-calib-file=../../../../samples/models/Secondary_FaceDetect/cal_trt.bin
+# Download model from NGC and store here
+#tlt-encoded-model= /opt/nvidia/deepstream/deepstream-5.1/sources/deepstream_python_apps/apps/deepstream_face_recognition/model.etlt
+#tlt-model-key=nvidia_tlt
 force-implicit-batch-dim=1
 batch-size=1
 network-mode=2
