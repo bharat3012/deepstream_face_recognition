@@ -32,7 +32,6 @@ This demo is built on top of Python sample app [deepstream-test2](https://github
 - Change the model-engine-file path to the your facenet engine file in `classifier_config.txt`.
 - `python3 deepstream_test_2.py <h264_elementary_stream_contains_faces>`
 
-
 ## References
 
 Inspired from  https://github.com/riotu-lab/deepstream-facenet
