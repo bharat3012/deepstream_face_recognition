@@ -11,7 +11,7 @@ Face Recognition on dGPU and Jetson Nano using DeepStream and Python.
 
 ## Overview of App
 This demo is built on top of Python sample app [deepstream-test2](https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test2) 
- - Download [back-to-back-detectors](https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/master/back-to-back-detectors) or Download FaceDetect TLT [Deployable model from NGC](https://ngc.nvidia.com/catalog/models/nvidia:tlt_facenet/files?version=deployable_v1.0)
+ - Download FaceDetect TLT [Deployable model from NGC](https://ngc.nvidia.com/catalog/models/nvidia:tlt_facenet/files?version=deployable_v1.0) or Download [back-to-back-detectors](https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/master/back-to-back-detectors)
  - The secondary inference facenet engine i.e. SGIE
  - Remove or let the tracker be there.
  - Note: embedding dataset (npz file) should be generate by your dataset.
@@ -20,9 +20,9 @@ This demo is built on top of Python sample app [deepstream-test2](https://github
 
 ### Steps to run the demo:
 
-- Generate the engine file for Facenet model
+- Generate the onnx file for Facenet model
   - facenet_keras.h5 can be found in the models folder. The model is taken from [nyoki-mtl/keras-facenet](https://github.com/nyoki-mtl/keras-facenet) and [Convert to onnx](https://github.com/riotu-lab/tf2trt_with_onnx)
-- Change the model-engine-file path to the your facenet engine file in `classifier_config.txt`.
+- Change the onnx-file path to the your facenet onnx file in `classifier_config.txt`.
 - `python3 deepstream_test_2.py <h264_elementary_stream_contains_faces>`
 
 ## References
